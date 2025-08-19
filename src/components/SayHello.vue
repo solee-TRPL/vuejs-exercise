@@ -27,10 +27,10 @@ function increment() {
 
 <template>
   <div>
-    <button v-on:click="increment">increment {{ counter }}</button> <br>
+    <button @click="increment">increment {{ counter }}</button> <br>
     <input placeholder="First Name..." type="text" id="firstName" /> <br>
     <input placeholder="Last Name..." type="text" id="lastName" /> <br>
-    <button v-on:click="sayHello">Say Hello</button> </br>
+    <button @click="sayHello">Say Hello</button> </br>
   </div>
   <h1>Hello {{ fullName }}</h1>
 </template>
