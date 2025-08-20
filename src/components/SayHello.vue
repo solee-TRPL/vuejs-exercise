@@ -23,14 +23,26 @@ function increment() {
     counter.value++;
 }
 
+function changeFirstName(event) {
+  // person.firstName = document.getElementById('firstName').value;
+  person.firstName = event.target.value; // agar memudahkan pengubahan parameter
+}
+
+function changeLastName(event) {
+  // person.lastName = document.getElementById('lastName').value;
+  person.lastName = event.target.value;;
+}
+
 </script>
 
 <template>
   <div>
-    <button @click="increment">increment {{ counter }}</button> <br>
-    <input placeholder="First Name..." type="text" id="firstName" /> <br>
-    <input placeholder="Last Name..." type="text" id="lastName" /> <br>
-    <button @click="sayHello">Say Hello</button> </br>
+    <form>
+      <button @click="counter++">increment {{ counter }}</button> <br>
+      <input @input="changeFirstName" placeholder="First Name..." type="text" id="firstName" /> <br>
+      <input @input="changeLastName" placeholder="Last Name..." type="text" id="lastName" /> <br>
+      <button @click.prevent="sayHello">Say Hello</button> </br>
+    </form>
   </div>
   <h1>Hello {{ fullName }}</h1>
 </template>

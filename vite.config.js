@@ -18,6 +18,7 @@ export default defineConfig({
         score: "score.html",
         todo_list: "todo-list.html",
         focus: "focus.html",
+        contact: "contact.html",
       },
     },
   },
