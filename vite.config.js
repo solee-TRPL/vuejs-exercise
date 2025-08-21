@@ -21,6 +21,7 @@ export default defineConfig({
         contact: "contact.html",
         product: "product.html",
         note: "note.html",
+        multiple_counter: "multiple-counter.html",
       },
     },
   },
