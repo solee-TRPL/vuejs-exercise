@@ -19,6 +19,8 @@ export default defineConfig({
         todo_list: "todo-list.html",
         focus: "focus.html",
         contact: "contact.html",
+        product: "product.html",
+        note: "note.html",
       },
     },
   },
